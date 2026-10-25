@@ -1,0 +1,17 @@
+COMMENT OBTENIR L'APK RAITRA AVEC GITHUB
+
+1. Sur un ordinateur ou le navigateur de ton téléphone, ouvre https://github.com/new
+2. Connecte-toi à GitHub. Crée un dépôt nommé Raitra. Pour commencer, choisis Public ou Private selon ta préférence.
+3. Décompresse ce ZIP. Ouvre le dossier raitra à l'intérieur. Envoie tous les fichiers et dossiers de ce dossier dans le dépôt GitHub (y compris le dossier caché .github).
+   Important : le dépôt doit contenir directement app/, build.gradle, settings.gradle et .github/workflows/build-apk.yml.
+4. Une fois les fichiers envoyés, ouvre l'onglet Actions du dépôt.
+5. Choisis « Build Raitra APK » puis « Run workflow » si le workflow n'a pas démarré automatiquement.
+6. Attends la fin du travail avec une coche verte.
+7. Ouvre le travail terminé et télécharge l'élément « Raitra-APK-Android-8-a-13 » dans la section Artifacts.
+8. Décompresse le fichier téléchargé : il contient app-debug.apk. Transfère ce fichier sur le téléphone et ouvre-le pour installer Raitra.
+
+COMPATIBILITE
+Le projet demande Android 8.0 (API 26) minimum et cible Android 13 (API 33). L'installation peut demander l'autorisation d'installer des applications depuis cette source.
+
+IMPORTANT
+Le workflow automatise la compilation, mais ne garantit pas que le code compile sans erreur ni que toutes les fonctions de montage avancées soient déjà terminées. Si GitHub affiche une erreur rouge, ouvre le travail puis la première étape rouge et partage le journal d'erreur pour correction.
