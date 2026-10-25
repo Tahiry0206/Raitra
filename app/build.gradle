@@ -1,3 +1,13 @@
-plugins {
-    id 'com.android.application' version '8.2.2' apply false
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.raitra.studio'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.raitra.studio'
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName '1.0'
+    }
 }
